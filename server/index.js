@@ -13,6 +13,11 @@ app.use("/admin", adminRouter)
 app.use("/user", userRouter)
 
 
+app.get("/", (req, res) => res.json({msg: "hello world after the class"}));
+
+
+
+
 // Connect to MongoDB
 // DONT MISUSE THIS THANKYOU!!
 // mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
